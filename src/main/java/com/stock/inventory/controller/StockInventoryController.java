@@ -78,7 +78,7 @@ public class StockInventoryController {
 		return new ResponseEntity<>(stockInventory, HttpStatus.OK);
 	}
 	
-	@PutMapping("save/stock")
+	@PutMapping("update/stock")
 	public ResponseEntity<Object> updateStock(@RequestBody StockInventory stockInventory) {
 		logger.info("started saving checklist");
 		StockInventory inventory =null;
